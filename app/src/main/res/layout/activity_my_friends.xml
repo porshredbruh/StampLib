@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="@string/friendCode"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_border"
+            android:padding="8dp"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/sendInviteButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_check_24"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/sendInvite"/>
+
+        <ImageButton
+            android:id="@+id/notifyButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_notifications_24"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/notification"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyFriendsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noFriendsNow"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false" />
+</LinearLayout>

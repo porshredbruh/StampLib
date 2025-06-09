@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/account_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profSettings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nicknameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nowName"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintTop_toBottomOf="@id/account_settings_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveNicknameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveName"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btns"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintTop_toBottomOf="@id/nicknameInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dropPass"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btns"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintTop_toBottomOf="@id/saveNicknameBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btns"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintTop_toBottomOf="@id/resetPasswordBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

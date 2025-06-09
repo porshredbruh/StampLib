@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enterYear"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/yearInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/examleHint"
+        android:inputType="number"
+        android:fontFamily="@font/comfortaa_light"
+        android:maxLength="4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/series"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/comfortaa_medium"/>
+
+    <ListView
+        android:id="@+id/seriesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/comfortaa_medium"/>
+</LinearLayout>

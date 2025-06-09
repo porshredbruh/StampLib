@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/stampImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/stamp_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/stampName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yearOf"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/stampYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/printType"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/printType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfType"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/perforationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfSize"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/perforationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paper"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waterMark"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/watermark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns"
+            android:text="@string/inCollection"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns"
+            android:text="@string/outCollection"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

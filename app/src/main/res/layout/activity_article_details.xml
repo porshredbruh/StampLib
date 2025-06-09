@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detailArticleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заголовок"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_medium"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/detailArticleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Текст статьи"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaa_light" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/stamp_border_red"
+    android:padding="8dp"
+    android:id="@+id/stampContainer">
+
+    <ImageView
+        android:id="@+id/stampImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/stamp_image" />
+
+    <TextView
+        android:id="@+id/stampName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Марка"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/comfortaa_medium"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <ImageButton
+            android:id="@+id/removeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_remove"
+            android:contentDescription="Удалить из коллекции"/>
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add"
+            android:contentDescription="Добавить в коллекцию"/>
+    </LinearLayout>
+</LinearLayout>

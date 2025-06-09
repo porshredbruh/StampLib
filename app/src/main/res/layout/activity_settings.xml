@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/comfortaa_medium"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/lang_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/lang"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/settings_list"
+        android:fontFamily="@font/comfortaa_medium"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/ru_bt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:background="@drawable/btns"
+        android:gravity="center"
+        android:text="Русский"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/eng_bt"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lang_text"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintWidth_percent="0.47" />
+
+
+    <Button
+        android:id="@+id/eng_bt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/btns"
+        android:gravity="center"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/ru_bt"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lang_text"
+        android:fontFamily="@font/comfortaa_medium"
+        app:layout_constraintWidth_percent="0.47" />
+
+    <TextView
+        android:id="@+id/bs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/comfortaa_medium"
+        android:gravity="center"
+        android:text="@string/Base_txt"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/eng_bt" />
+
+    <Button
+        android:id="@+id/updateDbBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/btns"
+        android:fontFamily="@font/comfortaa_medium"
+        android:gravity="center"
+        android:text="@string/Update_txt"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bs"
+        app:layout_constraintWidth_percent="0.94" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
