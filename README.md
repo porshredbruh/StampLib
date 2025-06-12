@@ -1,4 +1,7 @@
 # StampLib-App
+
+[Server code](https://github.com/porshredbruh/StampLib-server)
+
 ## General Overview
 
 #### StampLib is a modern social assistant application for stamp collectors, combining a digital database and automatic photo search.
