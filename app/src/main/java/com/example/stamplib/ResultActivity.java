@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.stamplib.adapters.ResultAdapter;
-import com.squareup.picasso.Picasso;
 
 import java.util.Arrays;
 import java.util.List;
@@ -41,7 +41,7 @@ public class ResultActivity extends AppCompatActivity {
         String[] resultsArray = intent.getStringArrayExtra("recognition_results");
 
         if (photoPath != null && !photoPath.isEmpty()) {
-            Picasso.get()
+            Glide.with(this)
                     .load(BASE_URL + photoPath)
                     .into(imageView);
         }

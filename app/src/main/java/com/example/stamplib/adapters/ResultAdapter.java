@@ -11,9 +11,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.stamplib.R;
 import com.example.stamplib.StampDetailsActivity;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -51,7 +51,10 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
         String imagePath = items.get(position);
         String fullUrl = baseUrl + imagePath;
 
-        Picasso.get().load(fullUrl).into(holder.imageView);
+        Glide.with(context)
+                .load(fullUrl)
+                .placeholder(R.drawable.stamp_placeholder)
+                .into(holder.imageView);
 
         holder.itemView.setOnClickListener(v -> {
             try {
