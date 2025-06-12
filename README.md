@@ -3,26 +3,33 @@
 
 #### StampLib is a modern social assistant application for stamp collectors, combining a digital database and automatic photo search.
 
-- Search by photo:
-Take a photo of the stamp and we will find it in the database. The algorithm identifies the image and offers options from the catalog.
+- Search by photo
+
+  Take a photo of the stamp and we will find it in the database. The algorithm identifies the image and offers options from the catalog.
 
 - Collection management
-Add stamps to your personal collection. The entire history of the Russian Empire and the RSFSR is at your fingertips.
+
+  Add stamps to your personal collection. The entire history of the Russian Empire and the RSFSR is at your fingertips.
 
 - Friends and exchange
-Find other collectors by unique code. Exchange stamps, view other people's collections.
+
+  Find other collectors by unique code. Exchange stamps, view other people's collections.
 
 - Articles and History
-Read materials about philately directly in the application.
+
+  Read materials about philately directly in the application.
 
 - Division by series
-The stamps are structured into series, with the ability to track progress on each one.
+
+  The stamps are structured into series, with the ability to track progress on each one.
 
 - Data Security
-All data is synchronized with the server. Login via email and secure storage of information.
+
+  All data is synchronized with the server. Login via email and secure storage of information.
 
 - Works offline
-Basic functions are available without the Internet - convenient for exhibitions and travel.
+
+  Basic functions are available without the Internet - convenient for exhibitions and travel.
 
 ## Screenshots of the app
 
