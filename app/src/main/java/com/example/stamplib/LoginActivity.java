@@ -100,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         try {
+            dbHelper.clearFriendsTable();
             Call<List<UserStamp>> stampCall = syncApi.getUserStamps(userId);
             Response<List<UserStamp>> stampResponse = stampCall.execute();
 
